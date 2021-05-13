@@ -1,0 +1,98 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2020-12-07 06:34:40",
+    "containerVersion": {
+        "path": "accounts/6002696644/containers/36441434/versions/5",
+        "accountId": "6002696644",
+        "containerId": "36441434",
+        "containerVersionId": "5",
+        "name": "0.0.3",
+        "container": {
+            "path": "accounts/6002696644/containers/36441434",
+            "accountId": "6002696644",
+            "containerId": "36441434",
+            "name": "gtm-sprocket",
+            "publicId": "GTM-NDQL4MV",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1607307778881",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6002696644/containers/36441434/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "6002696644",
+                "containerId": "36441434",
+                "tagId": "10",
+                "name": "tag_sprocket_login_status",
+                "type": "html",
+                "priority": {
+                    "type": "INTEGER",
+                    "value": "0"
+                },
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script type=\"text/javascript\">\n(function () {\n  var count = 0;\n  setTimeout(function wait() {\n    if (++count > 10) return;\n    if (typeof SPSDK === 'undefined') return setTimeout(wait, 500);\n      var props = {{variable_sprocket_login_status}};\n      console.log('Sprocket: Login props:\\n' + JSON.stringify(props, null, '  '));\n      SPSDK.record('login', props);   \n    }, 500);\n})();\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1607320886810",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "22",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6002696644",
+                "containerId": "36441434",
+                "triggerId": "19",
+                "name": "trigger_sprocket_login_status",
+                "type": "PAGEVIEW",
+                "fingerprint": "1607319710093",
+                "parentFolderId": "22"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6002696644",
+                "containerId": "36441434",
+                "variableId": "9",
+                "name": "variable_sprocket_login_status",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  /* Write code that returns log in status in object type. */\n  return {};\n}"
+                    }
+                ],
+                "fingerprint": "1607320947575",
+                "parentFolderId": "22",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "6002696644",
+                "containerId": "36441434",
+                "folderId": "22",
+                "name": "Sprocket データ連携（リアルタイム取り込み）ログイン状態",
+                "fingerprint": "1607319805360"
+            }
+        ],
+        "fingerprint": "1607321870168",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6002696644/containers/36441434/versions/5?apiLink=version"
+    }
+}

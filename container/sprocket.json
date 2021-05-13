@@ -1,0 +1,99 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2021-05-13 05:26:24",
+    "containerVersion": {
+        "path": "accounts/6002696644/containers/36441434/versions/6",
+        "accountId": "6002696644",
+        "containerId": "36441434",
+        "containerVersionId": "6",
+        "name": "release_20210512_1",
+        "description": "const_sprocket_apikey を const_sprocket_service_id に変更",
+        "container": {
+            "path": "accounts/6002696644/containers/36441434",
+            "accountId": "6002696644",
+            "containerId": "36441434",
+            "name": "gtm-sprocket",
+            "publicId": "GTM-NDQL4MV",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1607307778881",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6002696644/containers/36441434/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "6002696644",
+                "containerId": "36441434",
+                "tagId": "18",
+                "name": "tag_sprocket_common",
+                "type": "html",
+                "priority": {
+                    "type": "INTEGER",
+                    "value": "10"
+                },
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script src=\"//assets.v2.sprocket.bz/js/sprocket-jssdk.js#config=//assets.sprocket.bz/config/{{const_sprocket_service_id}}.json\" charset=\"UTF-8\"></script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1607316084292",
+                "firingTriggerId": [
+                    "21"
+                ],
+                "parentFolderId": "14",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6002696644",
+                "containerId": "36441434",
+                "triggerId": "21",
+                "name": "trigger_sprocket_common",
+                "type": "PAGEVIEW",
+                "fingerprint": "1607316058617",
+                "parentFolderId": "14"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6002696644",
+                "containerId": "36441434",
+                "variableId": "15",
+                "name": "const_sprocket_service_id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "const_sprocket_service_id"
+                    }
+                ],
+                "fingerprint": "1620883170287",
+                "parentFolderId": "14",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "6002696644",
+                "containerId": "36441434",
+                "folderId": "14",
+                "name": "Sprocket",
+                "fingerprint": "1607319781951"
+            }
+        ],
+        "fingerprint": "1620883480135",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6002696644/containers/36441434/versions/6?apiLink=version"
+    }
+}
